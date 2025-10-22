@@ -1,9 +1,9 @@
 module.exports = ({ env }) => ({
   upload: {
     config: {
-      provider: 'strapi-provider-upload-vercel',
+      provider: '@schornio/strapi-provider-upload-vercel-blob',
       providerOptions: {
-        token: env('VERCEL_BLOB_TOKEN'),
+        token: env('BLOB_READ_WRITE_TOKEN'),
         addRandomSuffix: false,
         cacheControlMaxAge: 31536000, // Year in seconds
       },
