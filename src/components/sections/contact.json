@@ -5,35 +5,18 @@
   },
   "options": {},
   "attributes": {
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "title": {
       "type": "string"
-    },
-    "company_name": {
-      "type": "string"
-    },
-    "data1": {
-      "type": "string"
-    },
-    "data2": {
-      "type": "string"
-    },
-    "data3": {
-      "type": "string"
-    },
-    "emailBox": {
-      "type": "component",
-      "component": "components.email-box",
-      "repeatable": false
-    },
-    "phoneBox": {
-      "type": "component",
-      "component": "components.phone-box",
-      "repeatable": false
-    },
-    "addressBox": {
-      "type": "component",
-      "component": "components.address-box",
-      "repeatable": false
     },
     "dataProcessingConsent": {
       "type": "text"
@@ -44,10 +27,36 @@
     "privacyNotice": {
       "type": "text"
     },
-    "copyright": {
-      "type": "component",
-      "component": "components.copyright",
-      "repeatable": false
+    "emailImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "phoneImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "addressImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "formTickImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "formSubmitLabel": {
+      "type": "string"
     }
   },
   "config": {}

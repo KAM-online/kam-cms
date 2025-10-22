@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_datas",
+  "info": {
+    "singularName": "contact-data",
+    "pluralName": "contact-datas",
+    "displayName": "ContactData"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "company_name": {
+      "type": "string"
+    },
+    "data1": {
+      "type": "string"
+    },
+    "data2": {
+      "type": "string"
+    },
+    "data3": {
+      "type": "string"
+    },
+    "emailAddress": {
+      "type": "email"
+    },
+    "phoneNumber": {
+      "type": "string",
+      "regex": "^\\+48\\s?\\d{3}[\\s-]?\\d{3}[\\s-]?\\d{3}$"
+    },
+    "address": {
+      "type": "blocks"
+    },
+    "copyright": {
+      "type": "component",
+      "component": "components.copyright",
+      "repeatable": false
+    }
+  }
+}

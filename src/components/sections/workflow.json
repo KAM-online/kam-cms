@@ -15,6 +15,13 @@
       "type": "component",
       "component": "components.card-workflow",
       "repeatable": true
+    },
+    "cardButton": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   },
   "config": {}
