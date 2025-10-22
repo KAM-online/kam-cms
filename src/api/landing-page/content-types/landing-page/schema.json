@@ -1,0 +1,60 @@
+{
+  "kind": "singleType",
+  "collectionName": "landing_pages",
+  "info": {
+    "singularName": "landing-page",
+    "pluralName": "landing-pages",
+    "displayName": "LandingPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mainSection": {
+      "type": "component",
+      "component": "sections.main",
+      "repeatable": false
+    },
+    "workflowSection": {
+      "type": "component",
+      "component": "sections.workflow",
+      "repeatable": false
+    },
+    "benefitSection": {
+      "type": "component",
+      "component": "sections.benefits",
+      "repeatable": false
+    },
+    "portalSection": {
+      "type": "component",
+      "component": "sections.portal",
+      "repeatable": false
+    },
+    "aiSection": {
+      "type": "component",
+      "component": "sections.ai",
+      "repeatable": false
+    },
+    "reportSection": {
+      "type": "component",
+      "component": "sections.reports",
+      "repeatable": false
+    },
+    "aboutSection": {
+      "type": "component",
+      "component": "sections.about",
+      "repeatable": false
+    },
+    "onboardingSection": {
+      "type": "component",
+      "component": "sections.onboarding",
+      "repeatable": false
+    },
+    "contact": {
+      "type": "component",
+      "component": "sections.contact",
+      "repeatable": false
+    }
+  }
+}

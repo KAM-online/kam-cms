@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_components_card_onboardings",
+  "info": {
+    "displayName": "CardOnboarding"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_onboardings",
+  "info": {
+    "displayName": "Onboarding"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "card_list": {
+      "type": "component",
+      "component": "components.card-onboarding",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

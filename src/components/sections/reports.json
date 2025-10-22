@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_sections_reports",
+  "info": {
+    "displayName": "Reports"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "titleSlogan": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "animation": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "card_list": {
+      "type": "component",
+      "component": "components.card-reports",
+      "repeatable": true
+    },
+    "desclaimer": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

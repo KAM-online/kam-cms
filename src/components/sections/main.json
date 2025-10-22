@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_sections_mains",
+  "info": {
+    "displayName": "Main"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slogan": {
+      "type": "text"
+    },
+    "button_list": {
+      "type": "component",
+      "component": "components.button",
+      "repeatable": true,
+      "max": 2
+    },
+    "mainAnimation": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "secondaryAnimation": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

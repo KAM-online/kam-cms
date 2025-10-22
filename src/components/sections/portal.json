@@ -1,0 +1,64 @@
+{
+  "collectionName": "components_sections_portals",
+  "info": {
+    "displayName": "Portal"
+  },
+  "options": {},
+  "attributes": {
+    "backgroundAnimation": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "titleSlogan": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "card_list": {
+      "type": "component",
+      "component": "components.card-portal",
+      "repeatable": true
+    },
+    "cardImage1": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cardImage2": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "lastCardAnimation": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

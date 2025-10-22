@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_components_text_items",
+  "info": {
+    "displayName": "TextItem"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}
