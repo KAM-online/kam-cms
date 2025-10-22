@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_benefit_cards",
+  "info": {
+    "displayName": "BenefitCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
