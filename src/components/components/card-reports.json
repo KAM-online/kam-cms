@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_components_card_reports",
+  "info": {
+    "displayName": "CardReports"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "textItem_list": {
+      "type": "component",
+      "component": "components.text-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

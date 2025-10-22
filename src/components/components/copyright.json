@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_components_copyrights",
+  "info": {
+    "displayName": "Copyright"
+  },
+  "options": {},
+  "attributes": {
+    "preYearText": {
+      "type": "string"
+    },
+    "postYearText": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

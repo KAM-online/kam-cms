@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_sections_benefits",
+  "info": {
+    "displayName": "Benefits"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "card_list": {
+      "type": "component",
+      "component": "components.card-benefits",
+      "repeatable": true
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "subTitleSlogan": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "button": {
+      "type": "component",
+      "component": "components.button",
+      "repeatable": false
+    },
+    "textItem_list": {
+      "type": "component",
+      "component": "components.text-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

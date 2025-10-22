@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_ais",
+  "info": {
+    "displayName": "Ai"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "card_list": {
+      "type": "component",
+      "component": "components.card-ai",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
