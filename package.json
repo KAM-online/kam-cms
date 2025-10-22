@@ -23,6 +23,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "strapi-provider-upload-vercel": "github:artoszbart/strapi-provider-upload-vercel",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {
