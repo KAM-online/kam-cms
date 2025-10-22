@@ -32,7 +32,7 @@ export interface ComponentsCardAi extends Struct.ComponentSchema {
     displayName: 'CardAi';
   };
   attributes: {
-    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image: Schema.Attribute.Media<'images'>;
     text: Schema.Attribute.Text;
     title: Schema.Attribute.String;
   };
@@ -44,7 +44,7 @@ export interface ComponentsCardBenefits extends Struct.ComponentSchema {
     displayName: 'CardBenefits';
   };
   attributes: {
-    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image: Schema.Attribute.Media<'images'>;
     text: Schema.Attribute.Text;
     title: Schema.Attribute.String;
   };
@@ -90,7 +90,7 @@ export interface ComponentsCardWorkflow extends Struct.ComponentSchema {
     displayName: 'CardWorkflow';
   };
   attributes: {
-    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image: Schema.Attribute.Media<'images'>;
     text: Schema.Attribute.Text;
     title: Schema.Attribute.String;
   };
@@ -145,12 +145,8 @@ export interface SectionsAbout extends Struct.ComponentSchema {
     displayName: 'About';
   };
   attributes: {
-    backgroundHorizontal: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
-    backgroundVertical: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
+    backgroundHorizontal: Schema.Attribute.Media<'images'>;
+    backgroundVertical: Schema.Attribute.Media<'images'>;
     text: Schema.Attribute.Blocks;
     title: Schema.Attribute.String;
   };
@@ -189,16 +185,16 @@ export interface SectionsContact extends Struct.ComponentSchema {
     displayName: 'Contact';
   };
   attributes: {
-    addressBox: Schema.Attribute.Component<'components.address-box', false>;
-    company_name: Schema.Attribute.String;
-    copyright: Schema.Attribute.Component<'components.copyright', false>;
-    data1: Schema.Attribute.String;
-    data2: Schema.Attribute.String;
-    data3: Schema.Attribute.String;
+    addressImage: Schema.Attribute.Media<'images'>;
+    backgroundImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     dataProcessingConsent: Schema.Attribute.Text;
-    emailBox: Schema.Attribute.Component<'components.email-box', false>;
+    emailImage: Schema.Attribute.Media<'images'>;
+    formSubmitLabel: Schema.Attribute.String;
+    formTickImage: Schema.Attribute.Media<'images'>;
     marketingConsent: Schema.Attribute.Text;
-    phoneBox: Schema.Attribute.Component<'components.phone-box', false>;
+    phoneImage: Schema.Attribute.Media<'images'>;
     privacyNotice: Schema.Attribute.Text;
     title: Schema.Attribute.String;
   };
@@ -217,12 +213,8 @@ export interface SectionsMain extends Struct.ComponentSchema {
         },
         number
       >;
-    mainAnimation: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
-    secondaryAnimation: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
+    mainAnimation: Schema.Attribute.Media<'images'>;
+    secondaryAnimation: Schema.Attribute.Media<'images'>;
     slogan: Schema.Attribute.Text;
     subTitle: Schema.Attribute.String;
     text: Schema.Attribute.Blocks;
@@ -237,6 +229,7 @@ export interface SectionsOnboarding extends Struct.ComponentSchema {
   };
   attributes: {
     card_list: Schema.Attribute.Component<'components.card-onboarding', true>;
+    listDivider: Schema.Attribute.Media<'images'>;
     title: Schema.Attribute.String;
   };
 }
@@ -247,19 +240,11 @@ export interface SectionsPortal extends Struct.ComponentSchema {
     displayName: 'Portal';
   };
   attributes: {
-    backgroundAnimation: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
+    backgroundAnimation: Schema.Attribute.Media<'videos'>;
     card_list: Schema.Attribute.Component<'components.card-portal', true>;
-    cardImage1: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
-    cardImage2: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
-    lastCardAnimation: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
+    cardImage1: Schema.Attribute.Media<'images'>;
+    cardImage2: Schema.Attribute.Media<'images'>;
+    lastCardAnimation: Schema.Attribute.Media<'images'>;
     text: Schema.Attribute.Blocks;
     title: Schema.Attribute.String;
     titleSlogan: Schema.Attribute.String;
@@ -272,7 +257,7 @@ export interface SectionsReports extends Struct.ComponentSchema {
     displayName: 'Reports';
   };
   attributes: {
-    animation: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    animation: Schema.Attribute.Media<'videos'>;
     card_list: Schema.Attribute.Component<'components.card-reports', true>;
     desclaimer: Schema.Attribute.Text;
     text: Schema.Attribute.Blocks;
@@ -288,6 +273,7 @@ export interface SectionsWorkflow extends Struct.ComponentSchema {
   };
   attributes: {
     card_list: Schema.Attribute.Component<'components.card-workflow', true>;
+    cardButton: Schema.Attribute.Media<'images'>;
     text: Schema.Attribute.Blocks;
     title: Schema.Attribute.String;
   };

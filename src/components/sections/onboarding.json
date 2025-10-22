@@ -12,6 +12,13 @@
       "type": "component",
       "component": "components.card-onboarding",
       "repeatable": true
+    },
+    "listDivider": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   },
   "config": {}
