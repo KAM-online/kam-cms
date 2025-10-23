@@ -479,7 +479,7 @@ export interface ApiLandingPageLandingPage extends Struct.SingleTypeSchema {
     aboutSection: Schema.Attribute.Component<'sections.about', false>;
     aiSection: Schema.Attribute.Component<'sections.ai', false>;
     benefitSection: Schema.Attribute.Component<'sections.benefits', false>;
-    contact: Schema.Attribute.Component<'sections.contact', false>;
+    contactSection: Schema.Attribute.Component<'sections.contact', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
