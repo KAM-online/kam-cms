@@ -270,7 +270,7 @@ export interface SectionsReports extends Struct.ComponentSchema {
   attributes: {
     animation: Schema.Attribute.Media<'videos'>;
     card_list: Schema.Attribute.Component<'components.card-reports', true>;
-    desclaimer: Schema.Attribute.Text;
+    disclaimer: Schema.Attribute.Text;
     text: Schema.Attribute.Blocks;
     title: Schema.Attribute.String;
     titleSlogan: Schema.Attribute.String;

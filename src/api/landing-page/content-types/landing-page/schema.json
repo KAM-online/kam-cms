@@ -51,7 +51,7 @@
       "component": "sections.onboarding",
       "repeatable": false
     },
-    "contact": {
+    "contactSection": {
       "type": "component",
       "component": "sections.contact",
       "repeatable": false

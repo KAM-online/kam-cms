@@ -26,7 +26,7 @@
       "component": "components.card-reports",
       "repeatable": true
     },
-    "desclaimer": {
+    "disclaimer": {
       "type": "text"
     }
   },
