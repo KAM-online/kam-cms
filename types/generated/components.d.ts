@@ -129,6 +129,17 @@ export interface ComponentsPhoneBox extends Struct.ComponentSchema {
   };
 }
 
+export interface ComponentsPrivacyPolicyEntry extends Struct.ComponentSchema {
+  collectionName: 'components_components_privacy_policy_entries';
+  info: {
+    displayName: 'PrivacyPolicyEntry';
+  };
+  attributes: {
+    text: Schema.Attribute.Blocks;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ComponentsTextItem extends Struct.ComponentSchema {
   collectionName: 'components_components_text_items';
   info: {
@@ -293,6 +304,7 @@ declare module '@strapi/strapi' {
       'components.copyright': ComponentsCopyright;
       'components.email-box': ComponentsEmailBox;
       'components.phone-box': ComponentsPhoneBox;
+      'components.privacy-policy-entry': ComponentsPrivacyPolicyEntry;
       'components.text-item': ComponentsTextItem;
       'sections.about': SectionsAbout;
       'sections.ai': SectionsAi;
