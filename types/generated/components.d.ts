@@ -203,6 +203,9 @@ export interface SectionsContact extends Struct.ComponentSchema {
     dataProcessingConsent: Schema.Attribute.Text;
     emailImage: Schema.Attribute.Media<'images'>;
     formSubmitLabel: Schema.Attribute.String;
+    formSuccessImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     formTickImage: Schema.Attribute.Media<'images'>;
     marketingConsent: Schema.Attribute.Text;
     phoneImage: Schema.Attribute.Media<'images'>;
