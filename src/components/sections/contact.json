@@ -57,6 +57,16 @@
     },
     "formSubmitLabel": {
       "type": "string"
+    },
+    "formSuccessImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   },
   "config": {}
