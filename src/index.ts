@@ -1,4 +1,7 @@
 // import type { Core } from '@strapi/strapi';
+import { errors } from '@strapi/utils';
+
+const { ApplicationError } = errors;
 
 export default {
   /**
@@ -14,6 +17,41 @@ export default {
         (ctx.req.socket as any).encrypted = true;
       }
       await next();
+    });
+
+    strapi.documents.use(async (context, next) => {
+      const revalidationMap: Record<string, string[]> = {
+        ContactData: ['/', '/polityka-prywatnosci'],
+        LandingPage: ['/'],
+        PrivacyPolicy: ['/polityka-prywatnosci'],
+      };
+      const pageActions = ['publish'];
+
+      if (
+        pageActions.includes(context.action) &&
+        revalidationMap[context.contentType.globalId]
+      ) {
+        const res = await fetch(`${process.env.FRONTEND_URL}/api/revalidate`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${process.env.FRONTEND_SECRET}`,
+          },
+          body: JSON.stringify({
+            paths: revalidationMap[context.contentType.globalId],
+          }),
+        });
+
+        const response = (await res.json()) as any;
+
+        if (response.error) {
+          throw new ApplicationError(
+            'Wystąpił błąd podczas odświerzania frontendu'
+          );
+        }
+      }
+
+      return next();
     });
   },
 
