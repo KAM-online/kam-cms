@@ -490,6 +490,12 @@ export interface ApiLandingPageLandingPage extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     mainSection: Schema.Attribute.Component<'sections.main', false>;
+    modalCloseIcon: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    modalOpenIcon: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     onboardingSection: Schema.Attribute.Component<'sections.onboarding', false>;
     portalSection: Schema.Attribute.Component<'sections.portal', false>;
     publishedAt: Schema.Attribute.DateTime;

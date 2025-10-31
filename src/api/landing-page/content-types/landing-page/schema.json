@@ -55,6 +55,26 @@
       "type": "component",
       "component": "sections.contact",
       "repeatable": false
+    },
+    "modalOpenIcon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "modalCloseIcon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

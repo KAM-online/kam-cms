@@ -287,7 +287,6 @@ export interface SectionsWorkflow extends Struct.ComponentSchema {
   };
   attributes: {
     card_list: Schema.Attribute.Component<'components.card-workflow', true>;
-    cardButton: Schema.Attribute.Media<'images'>;
     text: Schema.Attribute.Blocks;
     title: Schema.Attribute.String;
   };
