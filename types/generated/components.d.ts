@@ -258,7 +258,7 @@ export interface SectionsPortal extends Struct.ComponentSchema {
     card_list: Schema.Attribute.Component<'components.card-portal', true>;
     cardImage1: Schema.Attribute.Media<'images'>;
     cardImage2: Schema.Attribute.Media<'images'>;
-    lastCardAnimation: Schema.Attribute.Media<'images'>;
+    lastCardAnimation: Schema.Attribute.Media<'videos'>;
     text: Schema.Attribute.Blocks;
     title: Schema.Attribute.String;
     titleSlogan: Schema.Attribute.String;
